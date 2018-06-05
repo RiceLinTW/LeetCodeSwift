@@ -1,23 +1,27 @@
-//: [Previous](@previous)
+/*:
+ ### 118. Pascal's Triangle
+ 
+ Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
+ 
+ ![img](PascalTriangleAnimated2.gif)
+ 
+ In Pascal's triangle, each number is the sum of the two numbers directly above it.
+ 
+ Example:
+ 
+ Input: 5
+ Output:
+ [
+ [1],
+ [1,1],
+ [1,2,1],
+ [1,3,3,1],
+ [1,4,6,4,1]
+ ]
+ */
 
 import Foundation
 
-// Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
-//
-// See image at https://leetcode.com/problems/pascals-triangle/description/
-//
-// In Pascal's triangle, each number is the sum of the two numbers directly above it.
-//
-// Example:
-// Input: 5
-// Output:
-// [
-//  [1],
-//  [1,1],
-//  [1,2,1],
-//  [1,3,3,1],
-//   [1,4,6,4,1]
-// ]
 func generate(_ numRows: Int) -> [[Int]] {
     guard numRows > 0 else {
         return []
@@ -42,3 +46,9 @@ func generate(_ numRows: Int) -> [[Int]] {
     
     return result
 }
+
+/*:
+ [<< 112. Path Sum](@previous)
+ 
+ [>> 119. Pascal's Triangle II](@next)
+ */

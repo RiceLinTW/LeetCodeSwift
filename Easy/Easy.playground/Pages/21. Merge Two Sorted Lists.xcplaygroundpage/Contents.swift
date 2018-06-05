@@ -1,12 +1,15 @@
-//: [Previous](@previous)
-
+/*:
+ ### 21. Merge Two Sorted Lists
+ 
+ Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+ 
+ Example:
+ 
+ Input: 1->2->4, 1->3->4
+ Output: 1->1->2->3->4->4
+ */
 import Foundation
 
-// Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
-//
-// Example:
-// Input: 1->2->4, 1->3->4
-// Output: 1->1->2->3->4->4
 public class ListNode {
     public var val: Int
     public var next: ListNode?
@@ -38,3 +41,8 @@ func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     return result.next
 }
 
+/*:
+ [<< 20. Valid Parentheses](@previous)
+ 
+ [>> 26. Remove Duplicates from Sorted Array](@next)
+ */
